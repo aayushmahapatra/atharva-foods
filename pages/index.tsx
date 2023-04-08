@@ -1,13 +1,10 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import Home from "@/components/Home";
 import Metrics from "@/components/Metrics";
 import Why from "@/components/Why";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Products from "@/components/Products";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Index() {
   return (
