@@ -23,7 +23,7 @@ const Home = () => {
           </button>
         </section>
         <section className="w-1/2 flex items-center">
-          <div className="h-full w-11/12 flex items-center mt-12">
+          <div className="h-full w-11/12 flex items-center mt-12 shadow-lg">
             <Image
               src={Masala}
               alt="masala"
