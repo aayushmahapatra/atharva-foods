@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Navbar from "./Navbar";
 import Masala from "../assets/masala.jpeg";
 
 const Home = () => {
   return (
     <main className="h-full px-12">
-      <Navbar />
+      <div id="home" className="absolute -mt-12 bg-transparent" />
       <section className="flex h-4/5">
         <section className="mx-12 w-1/2">
           <div className="text-6xl font-bold mt-36">

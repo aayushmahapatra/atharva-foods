@@ -15,7 +15,11 @@ const VALUES = [
 
 const Contact = () => {
   return (
-    <main className="bg-[#312C38] flex justify-center py-12">
+    <footer
+      className="bg-[#312C38] flex justify-center py-12"
+      data-aos="fade-up"
+      id="contact"
+    >
       {VALUES.map((value, i) => (
         <section key={i} className="flex flex-col mx-32">
           <h2 className="text-white text-2xl font-semibold mb-4">
@@ -26,7 +30,7 @@ const Contact = () => {
           <div className="text-[#F7EFE7] text-lg font-light">{value.info3}</div>
         </section>
       ))}
-    </main>
+    </footer>
   );
 };
 

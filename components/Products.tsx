@@ -22,7 +22,8 @@ const PRODUCTS = [
 
 const Products = () => {
   return (
-    <main className="bg-[#BFB0A0] h-fit w-full p-8">
+    <main className="bg-[#BFB0A0] h-fit w-full p-8" data-aos="fade-up">
+      <div id="products" className="absolute -mt-52 bg-transparent" />
       <h2 className="text-3xl font-bold text-center">our products</h2>
       <section className="flex justify-center mt-2">
         {TABS.map((tab, i) => (
@@ -36,7 +37,11 @@ const Products = () => {
       </section>
       <section className="flex justify-center my-8 w-full">
         {PRODUCTS.map((product, i) => (
-          <div key={i} className="bg-black/20 mx-8 p-4 rounded-lg w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/30">
+          <div
+            key={i}
+            className="bg-black/20 mx-8 p-4 rounded-lg w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/30"
+            data-aos="fade-left"
+          >
             <div>
               <Image
                 src={Masala}
@@ -44,8 +49,12 @@ const Products = () => {
                 className="w-full max-h-64 rounded-lg"
               />
             </div>
-            <h4 className="text-xl text-center mt-4 font-semibold">{product.name}</h4>
-            <p className="text-center text-white p-2 font-light">{product.description}</p>
+            <h4 className="text-xl text-center mt-4 font-semibold">
+              {product.name}
+            </h4>
+            <p className="text-center text-white p-2 font-light">
+              {product.description}
+            </p>
           </div>
         ))}
       </section>

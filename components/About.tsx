@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <main className="bg-black/20 py-12">
+    <main className="bg-black/20 py-12" data-aos="fade-up" id="about">
       <h2 className="text-3xl font-bold text-center">About Us</h2>
       <p className=" text-center text-lg mx-auto w-3/5 my-8">
         We are Atharva Food Products and we have been making spices here in
