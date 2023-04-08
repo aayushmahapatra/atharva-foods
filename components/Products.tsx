@@ -35,11 +35,11 @@ const Products = () => {
           </div>
         ))}
       </section>
-      <section className="flex justify-center my-8 w-full">
+      <section className="block lg:flex justify-center my-8 w-full">
         {PRODUCTS.map((product, i) => (
           <div
             key={i}
-            className="bg-black/20 mx-8 p-4 rounded-lg w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/30"
+            className="bg-black/20 my-8 lg:my-0 lg:mx-8 p-4 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/30"
             data-aos="fade-left"
           >
             <div>

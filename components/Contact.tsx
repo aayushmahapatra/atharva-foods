@@ -16,13 +16,13 @@ const VALUES = [
 const Contact = () => {
   return (
     <footer
-      className="bg-[#312C38] flex justify-center py-12"
+      className="bg-[#312C38] block md:flex justify-center py-6"
       data-aos="fade-up"
       id="contact"
     >
       {VALUES.map((value, i) => (
-        <section key={i} className="flex flex-col mx-32">
-          <h2 className="text-white text-2xl font-semibold mb-4">
+        <section key={i} className="flex flex-col my-6 md:mx-16 lg:mx-32 text-center md:text-left">
+          <h2 className="text-white text-2xl font-semibold mb-2 md:mb-4">
             {value.name}
           </h2>
           <div className="text-[#F7EFE7] text-lg font-light">{value.info1}</div>
