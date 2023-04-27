@@ -29,7 +29,7 @@ const Home = () => {
               className="mix-blend-multiply w-full h-full rounded-lg"
             />
           </div>
-          <div className="absolute -rotate-90 text-9xl font-bold text-black/30 xl:-right-52 hidden xl:block">
+          <div className="absolute -rotate-90 text-9xl font-bold text-black/30 xl:-right-56 hidden xl:block">
             Atharva
           </div>
         </section>

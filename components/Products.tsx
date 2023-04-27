@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Masala from "../assets/masala.jpeg";
 
-const TABS = ["masalas", "spices"];
 const PRODUCTS = [
-  {
-    name: "Mutton Masala",
-    description:
-      "Atharva Mutton Masala is one of our most selling product. It is used to make both veg and nonveg curry's as long as it has gravy in it and it will taste according to the dish you cook.",
-  },
   {
     name: "Mutton Masala",
     description:
@@ -25,16 +19,6 @@ const Products = () => {
     <main className="bg-[#BFB0A0] h-fit w-full p-8" data-aos="fade-up">
       <div id="products" className="absolute -mt-52 bg-transparent" />
       <h2 className="text-3xl font-bold text-center">our products</h2>
-      <section className="flex justify-center mt-2">
-        {TABS.map((tab, i) => (
-          <div
-            key={i}
-            className="text-2xl font-semibold mx-6 cursor-pointer border-b-4 border-transparent hover:border-red-500"
-          >
-            {tab}
-          </div>
-        ))}
-      </section>
       <section className="block lg:flex justify-center my-8 w-full">
         {PRODUCTS.map((product, i) => (
           <div
