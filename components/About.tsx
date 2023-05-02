@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <main className="bg-black/20 py-12" data-aos="fade-up" id="about">
-      <h2 className="text-3xl font-bold text-center">About Us</h2>
+      <h2 className="text-4xl font-bold text-center">About Us</h2>
       <p className=" text-center text-lg mx-auto px-8 md:px-0 w-full md:w-3/5 my-8">
         We are Atharva Food Products and we have been making spices here in
         India since 2003. As industry leaders since our founding in 2003, we’ve

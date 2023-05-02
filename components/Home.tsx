@@ -4,7 +4,7 @@ import Masala from "../assets/masala.jpeg";
 const Home = () => {
   return (
     <main className="h-full px-12 py-12">
-      <div id="home" className="absolute -mt-12 bg-transparent" />
+      <div id="home" className="absolute -mt-28 bg-transparent" />
       <section className="block lg:flex h-3/5">
         <section className="lg:mx-12 w-full lg:w-1/2 text-center lg:text-left">
           <div className="text-6xl font-bold mt-12 lg:mt-36">
@@ -29,7 +29,7 @@ const Home = () => {
               className="mix-blend-multiply w-full h-full rounded-lg"
             />
           </div>
-          <div className="absolute -rotate-90 text-9xl font-bold text-black/30 xl:-right-56 hidden xl:block">
+          <div className="absolute -rotate-90 text-9xl font-bold text-black/30 xl:-right-60 hidden xl:block">
             Atharva
           </div>
         </section>

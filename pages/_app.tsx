@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import "@/styles/globals.css";
 
 const poppins = Poppins({
-  weight: "400",
+  weight: ["300", "400", "600", "700"],
   subsets: ["latin"],
 });
 

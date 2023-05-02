@@ -41,8 +41,8 @@ const AllProducts = () => {
     <>
       <Navbar />
       <main className="h-full w-full p-8">
-        <h2 className="text-3xl font-bold text-center mt-2">Our Products</h2>
-        <section className="flex justify-center mt-4">
+        <h2 className="text-5xl font-bold text-center mt-2">Our Products</h2>
+        <section className="flex justify-center mt-4 mb-8">
           {TABS.map((tab, i) => (
             <div
               key={i}
@@ -56,7 +56,7 @@ const AllProducts = () => {
           {PRODUCTS.map((product, i) => (
             <div
               key={i}
-              className="bg-black/20 my-8 lg:mx-8 p-4 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/30"
+              className="bg-black/80 my-4 lg:mx-4 p-3 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/90"
               data-aos="fade-left"
             >
               <div>
@@ -66,10 +66,10 @@ const AllProducts = () => {
                   className="w-full max-h-64 rounded-lg"
                 />
               </div>
-              <h4 className="text-xl text-center mt-4 font-semibold">
+              <h4 className="text-xl text-center mt-3 mb-2 font-semibold text-white">
                 {product.name}
               </h4>
-              <p className="text-center text-white p-2 font-light">
+              <p className="text-center text-sm text-gray-300 p-2 font-light">
                 {product.description}
               </p>
             </div>

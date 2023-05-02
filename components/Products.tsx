@@ -18,8 +18,8 @@ const Products = () => {
   return (
     <main className="bg-[#BFB0A0] h-fit w-full p-8" data-aos="fade-up">
       <div id="products" className="absolute -mt-52 bg-transparent" />
-      <h2 className="text-3xl font-bold text-center">our products</h2>
-      <section className="block lg:flex justify-center my-8 w-full">
+      <h2 className="text-4xl font-bold text-center">Our Products</h2>
+      <section className="block lg:flex justify-center mt-10 mb-8 w-full">
         {PRODUCTS.map((product, i) => (
           <div
             key={i}
