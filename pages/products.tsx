@@ -62,7 +62,7 @@ const AllProducts: FC = () => {
           {PRODUCTS.map((product, i) => (
             <div
               key={i}
-              className="bg-black/80 my-4 lg:mx-4 p-3 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/70"
+              className="bg-black/60 my-4 lg:mx-4 p-3 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/70"
               data-aos="fade-left"
             >
               <div>
