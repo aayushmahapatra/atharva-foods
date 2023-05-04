@@ -11,9 +11,9 @@ const FEATURES = [
 
 const Why = () => {
   return (
-    <main className="py-12" data-aos="fade-up">
+    <main className="py-32" data-aos="fade-up">
       <div id="features" className="absolute -mt-52 bg-transparent" />
-      <h2 className="text-4xl font-bold text-center">Why Atharva Foods?</h2>
+      <h2 className="text-5xl font-bold text-center">Why Atharva Foods?</h2>
       <p className="text-center text-xl px-4 md:px-0 mx-auto w-full lg:w-2/5 my-8">
         Our customers love working with us because we produce high quality
         products with an exceptionally fast turnaround. Reach out today to get

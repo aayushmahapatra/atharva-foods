@@ -8,11 +8,11 @@ const Home = () => {
       <section className="block lg:flex h-3/5">
         <section className="lg:mx-12 w-full lg:w-1/2 text-center lg:text-left">
           <div className="text-6xl font-bold mt-12 lg:mt-36">
-            <h1>masalas</h1>
+            <h1>Masalas</h1>
             <h1 className="my-4">&</h1>
-            <h1>spices</h1>
+            <h1>Spices</h1>
           </div>
-          <p className="text-xl font-semibold my-12">
+          <p className="text-xl my-12">
             At Atharva Food Products, quality is our mission. No matter what
             you’re looking for, we’re committed to bringing you exactly what you
             need, when you need it.
@@ -22,7 +22,7 @@ const Home = () => {
           </button>
         </section>
         <section className="w-full lg:w-1/2 flex items-center">
-          <div className="h-full w-full xl:w-11/12 flex items-center my-12 lg:my-0 shadow-lg">
+          <div className="h-full w-full xl:w-11/12 flex items-center my-12 lg:my-0 shadow-lg rounded-lg">
             <Image
               src={Masala}
               alt="masala"

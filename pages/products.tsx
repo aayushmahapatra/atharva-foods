@@ -1,3 +1,4 @@
+import { FC, useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Masala from "../assets/masala.jpeg";
@@ -36,7 +37,9 @@ const PRODUCTS = [
   },
 ];
 
-const AllProducts = () => {
+const AllProducts: FC = () => {
+  const [currentTab, setCurrentTab] = useState<string>("Masalas");
+
   return (
     <>
       <Navbar />
@@ -46,32 +49,38 @@ const AllProducts = () => {
           {TABS.map((tab, i) => (
             <div
               key={i}
-              className="text-2xl font-semibold mx-6 cursor-pointer border-b-4 border-transparent hover:border-red-500"
+              className={`text-2xl font-semibold mx-6 cursor-pointer border-b-4 border-transparent ${
+                currentTab === tab && "border-red-500"
+              }`}
+              onClick={() => setCurrentTab(tab)}
             >
               {tab}
             </div>
           ))}
         </section>
-        <section className="block lg:flex justify-center my-4 w-full lg:flex-wrap">
+        <section className="bg-red-500 block lg:flex justify-center my-4 w-full lg:flex-wrap py-12 rounded-lg">
           {PRODUCTS.map((product, i) => (
             <div
               key={i}
-              className="bg-black/80 my-4 lg:mx-4 p-3 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/90"
+              className="bg-black/80 my-4 lg:mx-4 p-3 rounded-lg w-full lg:w-1/4 cursor-pointer hover:shadow-lg hover:bg-black/70"
               data-aos="fade-left"
             >
               <div>
                 <Image
                   src={Masala}
                   alt="masala"
-                  className="w-full max-h-64 rounded-lg"
+                  className="w-full max-h-64 rounded-lg shadow"
                 />
               </div>
               <h4 className="text-xl text-center mt-3 mb-2 font-semibold text-white">
                 {product.name}
               </h4>
-              <p className="text-center text-sm text-gray-300 p-2 font-light">
+              <p className="text-center text-sm text-gray-300 mb-2 p-2 font-light">
                 {product.description}
               </p>
+              <button className="w-full bg-white/20 text-white rounded-lg py-2 hover:bg-red-500">
+                Buy
+              </button>
             </div>
           ))}
         </section>
